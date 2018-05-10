@@ -1,6 +1,15 @@
 require 'pry'
 
 class Deck
-  def initialize(card_array)
+  def initialize(deck_array)
+    @deck_array = deck_array
   end
+
+  def cards
+    @deck_array
+  end
+
+  def count
+    @deck_array.count
+  end 
 end
